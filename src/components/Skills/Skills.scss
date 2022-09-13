@@ -1,0 +1,30 @@
+@import "../../assets/styles/variables.scss";
+
+.Skills {
+    position: relative;
+    width: 100%;
+    height: 100rem;
+    padding-top: 5rem;
+    &__title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & span {
+            position: relative;
+            z-index: 1;
+            padding-left: 10rem;
+            padding-right: 10rem;
+            font-family: $noto-font;
+            color: $secondary-color;
+            font-weight: 800;
+            font-size: 3rem;
+        }
+    }
+    &__image {
+        position: absolute;
+        z-index: 0;
+        top: 4rem;
+        left: 51.5%;
+    }
+}
