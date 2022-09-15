@@ -1,4 +1,5 @@
 import React from "react";
+import Typewriter from "typewriter-effect";
 import ImageBg from "../../assets/images/green_aboutme_background.png";
 import "./AboutMe.scss";
 
@@ -6,10 +7,37 @@ const AboutMe = () => {
     return (
         <div className="AboutMe">
             <div className="AboutMe__text">
-                <h2 className="AboutMe__text--title">À propos de moi 👋</h2>
+                <h2 className="AboutMe__text--title">
+                    Moi c'est,
+                    <Typewriter
+                        options={{
+                            cursorClassName: "cursor",
+                            autoStart: true,
+                            loop: false,
+                            delay: 70,
+                        }}
+                        onInit={(typewriter) => {
+                            typewriter.pauseFor(500).start().typeString("Alexis Fontaine !");
+                        }}
+                    />
+                </h2>
+                <h2 className="AboutMe__text--title">
+                    Je recherche un poste de développeur
+                    <Typewriter
+                        options={{
+                            strings: ["Frontend", "en React !"],
+                            loop: false,
+                            autoStart: false,
+                            delay: 70,
+                        }}
+                        onInit={(typewriter) => {
+                            typewriter.pauseFor(1800).start().typeString("Frontend").pauseFor(500).deleteAll().typeString("ReactJS!");
+                        }}
+                    />
+                </h2>
                 <p className="AboutMe__text--content">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur corporis voluptatibus enim? Praesentium cumque quisquam eligendi iste
-                    alias consequuntur repellat, totam eius distinctio. Voluptatibus est quas recusandae maiores, possimus sint.
+                    Développeur web junior curieux et impliqué. Je recherche un poste de développeur frontend React. Étant une personne rigoureuse, j'apprécie
+                    le travail bien fait.
                 </p>
             </div>
             <div className="AboutMe__image">

@@ -1,0 +1,10 @@
+[
+    { "name": "React / Next", "value": 50, "image": "../../../../logo/react.png" },
+    { "name": "NodeJs / Express", "value": 40, "image": "../../../../logo/node.png" },
+    { "name": "MongoDB", "value": 60, "image": "../../../../logo/mongodb.png" },
+    { "name": "Javascript", "value": 60, "image": "../../../../logo/javascript.png" },
+    { "name": "Accessibilité / SEO", "value": 70, "image": "../../../../logo/html.png" },
+    { "name": "GIT", "value": 50, "image": "../../../../logo/git.png" },
+    { "name": "CSS / Sass", "value": 80, "image": "../../../../logo/sass.png" },
+    { "name": "HTML5", "value": 90, "image": "../../../../logo/html.png" }
+]

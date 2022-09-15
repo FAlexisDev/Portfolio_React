@@ -1,0 +1,52 @@
+@use "../../../assets/styles/animations";
+@import "../../../assets/styles/variables.scss";
+
+.skill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: 2rem solid $primary-color;
+    border-radius: 50%;
+    width: 20rem;
+    height: 20rem;
+    margin: 5rem 8rem 5rem 8rem;
+
+    &__name {
+        position: absolute;
+        font-size: 2rem;
+        font-family: $noto-font;
+        font-weight: 600;
+        color: $secondary-color;
+        bottom: 5rem;
+    }
+    &__value {
+        position: absolute;
+        bottom: -5rem;
+        font-family: $noto-font;
+        font-size: 2rem;
+        font-weight: 600;
+        color: $secondary-color;
+    }
+    &__image {
+        position: absolute;
+        width: 10rem;
+        height: auto;
+
+        &--active {
+            position: absolute;
+            width: 10rem;
+            height: auto;
+            top: 2rem;
+        }
+    }
+}
+
+.MuiCircularProgress-svg {
+    position: absolute;
+    width: 24rem;
+    height: 24rem;
+    color: $secondary-color;
+    top: -10rem;
+    left: -10rem;
+}
