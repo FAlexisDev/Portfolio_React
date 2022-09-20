@@ -29,13 +29,12 @@
             font-weight: 300;
             text-align: justify;
             margin-top: 2rem;
-            width: 98rem;
+            width: 92rem;
             text-align: justify;
         }
     }
     &__image {
         height: 40rem;
-        animation: display_left 1s ease-in-out both 1.5s;
         &--bg {
             position: relative;
             top: -17rem;

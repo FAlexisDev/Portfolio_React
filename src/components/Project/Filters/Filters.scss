@@ -1,0 +1,32 @@
+@import "../../../assets/styles/variables.scss";
+
+.filters {
+    &__list {
+        display: flex;
+        text-decoration: none;
+        list-style: none;
+        font-family: $noto-font;
+        font-weight: 400;
+        font-size: 1.5rem;
+        margin-bottom: 3rem;
+        margin-left: 3rem;
+
+        & li {
+            background-color: $secondary-color;
+            color: white;
+            margin-left: 4rem;
+            padding: 0.5rem;
+            width: 10rem;
+            text-align: center;
+        }
+    }
+}
+
+.project__card {
+    display: flex;
+
+    width: 95%;
+    margin: auto;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}

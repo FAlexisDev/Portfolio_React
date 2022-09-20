@@ -1,14 +1,17 @@
-import { border } from "@mui/system";
 import React from "react";
 import Headers from "../../components/Headers/Headers";
-import "./Contact.scss";
+import "./Projects.scss";
 
-const Contact = () => {
+import Project from "../../components/Project/Project";
+
+
+const Projects = () => {
     return (
         <div className="bg">
             <Headers />
+            <Project />
         </div>
     );
 };
 
-export default Contact;
+export default Projects;

@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Portfolio - Alexis Fontaine",
+        "techno": ["React", "Sass", "HTML"],
+        "description": "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. ",
+        "image": "../../../../project/portfolio.png"
+    },
+    {
+        "name": "Groupomania",
+        "techno": ["React", "NextJS", "Sass", "HTML", "NodeJS", "Express", "MongoDB", "SEO / Accessibilité"],
+        "description": "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. ",
+        "image": "../../../../project/booki.png"
+    },
+    {
+        "name": "Piiquante",
+        "techno": ["NodeJS", "Express", "MongoDB"],
+        "description": "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. ",
+        "image": "../../../../project/piiquante.png"
+    },
+    {
+        "name": "Kanap.",
+        "techno": ["Javascript", "Sass", "HTML"],
+        "description": "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. ",
+        "image": "../../../../project/kanap.png"
+    },
+    {
+        "name": "La Panthère",
+        "techno": ["HTML", "Sass", "SEO / Accessibilité"],
+        "description": "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. ",
+        "image": "../../../../project/panthere.png"
+    },
+    {
+        "name": "Ohmyfood!",
+        "techno": ["HTML", "Sass"],
+        "description": "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. ",
+        "image": "../../../../project/ohmyfood.png"
+    },
+    {
+        "name": "Booki",
+        "techno": ["HTML", "CSS"],
+        "description": "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. ",
+        "image": "../../../../project/booki.png"
+    }
+]

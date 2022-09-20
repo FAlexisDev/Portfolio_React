@@ -1,0 +1,29 @@
+@import "../../assets/styles/variables.scss";
+
+.project {
+    margin-top: 16rem;
+    font-family: $noto-font;
+    &__title {
+        position: relative;
+        display: flex;
+        margin-left: 7rem;
+        margin-bottom: 5rem;
+
+        &--text {
+            position: relative;
+            z-index: 1;
+            font-size: 3rem;
+        }
+        &--image {
+            position: absolute;
+            z-index: 0;
+            left: 13rem;
+            top: -1rem;
+        }
+    }
+}
+
+.filters {
+    margin-bottom: 5rem;
+    justify-content: center;
+}

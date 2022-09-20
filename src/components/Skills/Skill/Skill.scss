@@ -50,3 +50,7 @@
     top: -10rem;
     left: -10rem;
 }
+
+.MuiCircularProgress-indeterminate {
+    animation: circular-rotate 1.4s ease-in-out infinite;
+}
