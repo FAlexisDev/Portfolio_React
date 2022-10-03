@@ -3,10 +3,6 @@ import "./Badges.scss";
 
 const Badges = (props) => {
     const badge = useRef(null);
-    // useEffect(() => {
-    //     const color = badges.get(props.badge);
-    //     badge.current.style.background = color;
-    // }, []);
 
     return (
         <div className="test">

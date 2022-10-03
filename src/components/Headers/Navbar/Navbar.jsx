@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
-import DowloadButton from "../../../assets/images/download-button.png";
+import DowloadButton from "../../../assets/images/download-button.webp";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import "./Navbar.scss";
@@ -44,7 +44,7 @@ const Navbar = () => {
                         <Link className={route === "/" ? "navbar__link underline" : "navbar__link"} to="/">
                             À propos
                         </Link>
-                        <Link className={route === "/projets" ? "navbar__link underline" : "navbar__link"} to="/projets">
+                        <Link className={route === "/projects" ? "navbar__link underline" : "navbar__link"} to="/projects">
                             Projets
                         </Link>
                         <Link className={route === "/contact" ? "navbar__link underline" : "navbar__link"} to="/contact">

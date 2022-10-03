@@ -3,49 +3,49 @@
         "name": "Portfolio - Alexis Fontaine",
         "techno": ["React", "Sass", "HTML", "MUI", "SEO / Accessibilité"],
         "description": "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. ",
-        "image": "../../../../project/portfolio.png",
+        "image": "../../../../project/portfolio.webp",
         "link": "https://github.com/FAlexisDev/Portfolio_React"
     },
     {
         "name": "Groupomania",
-        "techno": ["React", "NextJS", "Sass", "HTML", "NodeJS", "Express", "MongoDB", "SEO / Accessibilité"],
+        "techno": ["React", "NextJS", "Sass", "NodeJS", "Express", "MongoDB", "SEO / Accessibilité"],
         "description": "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. ",
-        "image": "../../../../project/groupomania.png",
+        "image": "../../../../project/groupomania.webp",
         "link": "https://github.com/FAlexisDev/AlexisFontaine_7_nextjs"
     },
     {
         "name": "Piiquante",
         "techno": ["NodeJS", "Express", "MongoDB"],
         "description": "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. ",
-        "image": "../../../../project/piiquante.png",
+        "image": "../../../../project/piiquante.webp",
         "link": "https://github.com/FAlexisDev/AlexisFontaine_6_30052022"
     },
     {
         "name": "Kanap.",
         "techno": ["Javascript", "Sass", "HTML"],
         "description": "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. ",
-        "image": "../../../../project/kanap.png",
+        "image": "../../../../project/kanap.webp",
         "link": "https://github.com/FAlexisDev/AlexisFontaine_P5_better_11042022"
     },
     {
         "name": "La Panthère",
         "techno": ["HTML", "Sass", "SEO / Accessibilité"],
         "description": "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. ",
-        "image": "../../../../project/panthere.png",
+        "image": "../../../../project/panthere.webp",
         "link": "https://falexisdev.github.io/AlexisFontaine_4_16032022/"
     },
     {
         "name": "Ohmyfood!",
         "techno": ["HTML", "Sass"],
         "description": "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. ",
-        "image": "../../../../project/ohmyfood.png",
+        "image": "../../../../project/ohmyfood.webp",
         "link": "https://falexisdev.github.io/AlexisFontaine_3_03022021/"
     },
     {
         "name": "Booki",
         "techno": ["HTML", "CSS"],
         "description": "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. ",
-        "image": "../../../../project/booki.png",
+        "image": "../../../../project/booki.webp",
         "link": "https://falexisdev.github.io/P2_Booki/"
     }
 ]
