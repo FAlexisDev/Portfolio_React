@@ -4,9 +4,15 @@
     margin: 0;
     padding: 0;
 }
+
 .header {
     display: flex;
     justify-content: space-between;
+    @media screen and (min-width: 2000px) {
+        width: 80%;
+        margin: auto;
+        align-items: center;
+    }
 }
 .title {
     color: $secondary-color;
@@ -19,6 +25,10 @@
         padding-top: 2rem;
         position: relative;
         z-index: 1;
+        @media screen and (max-width: 768px) {
+            padding-left: 1rem;
+            font-size: 3rem;
+        }
     }
     &__image {
         position: absolute;

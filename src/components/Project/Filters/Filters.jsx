@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
 import "./Filters.scss";
 import Card from "../Card/Card";
+
 const Filters = (props) => {
     const [filter, setFilter] = useState("");
     const [data, setData] = useState(props.cardData);
+
     useEffect(() => {
         const frontEndConditions = ["React", "Sass", "HTML", "Javascript", "CSS"];
         const backEndConditions = ["NodeJS", "MongoDB", "Express"];
@@ -18,24 +20,35 @@ const Filters = (props) => {
         if (filter === "all") {
             setData(props.cardData);
         }
-    }, [filter]);
+    }, [filter, props.cardData]);
 
     return (
         <div className="filters">
             <ul className="filters__list">
                 <li className="filters__list--delete" onClick={() => setFilter("all")}>
-                    × TOUS
+                    TOUS
                 </li>
                 <li className="filters__list--react" onClick={() => setFilter("frontend")}>
-                    × Frontend
+                    Frontend
                 </li>
                 <li className="filters__list--javascript" onClick={() => setFilter("backend")}>
-                    × Backend
+                    Backend
                 </li>
             </ul>
+
             <div className="project__card">
                 {data.map((card) => {
-                    return <Card name={card.name} image={card.image} description={card.description} badge={card.techno} key={Math.random()} />;
+                    return (
+                        <Card
+                            name={card.name}
+                            image={card.image}
+                            description={card.description}
+                            badge={card.techno}
+                            key={Math.random()}
+                            link={card.link}
+                            className="test1"
+                        />
+                    );
                 })}
             </div>
         </div>

@@ -1,24 +1,61 @@
 @use "../../assets/styles/animations";
 @import "../../assets/styles/variables.scss";
 
-* {
-    margin: 0;
-    padding: 0;
-}
 .AboutMe {
     display: flex;
-    width: 100%;
     justify-content: space-evenly;
     font-family: $noto-font;
     margin-top: 20rem;
     padding-left: 4rem;
 
+    @media screen and (min-width: 2000px) {
+        justify-content: space-evenly;
+        align-items: center;
+        width: 80%;
+        margin: auto;
+        margin-top: 20rem;
+    }
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        padding-left: 0;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10rem;
+    }
+    @media screen and (max-width: 1727px) {
+        width: 100%;
+        padding-left: 0;
+        justify-content: flex-start;
+        flex-direction: column;
+        margin-top: 10rem;
+    }
+
     &__text {
         height: 40rem;
+
         &--title {
             animation: display_down ease-in-out 1s both;
             display: flex;
             font-size: 4rem;
+            width: 98rem;
+            @media screen and (max-width: 768px) {
+                font-size: 3.4rem;
+                width: 90%;
+                margin: auto;
+                justify-content: center;
+                flex-wrap: wrap;
+                text-align: center;
+            }
+            @media screen and (max-width: 1727px) {
+                font-size: 3.4rem;
+                width: 90%;
+                margin: auto;
+                justify-content: center;
+                flex-wrap: wrap;
+                text-align: center;
+            }
+
             & span {
                 color: $secondary-color;
             }
@@ -27,17 +64,44 @@
             animation: display_down 1s ease-in-out 0.5s both;
             font-size: 2.5rem;
             font-weight: 300;
-            text-align: justify;
             margin-top: 2rem;
             width: 92rem;
             text-align: justify;
+
+            @media screen and (max-width: 1727px) {
+                font-size: 2.2rem;
+                width: 70%;
+                margin: auto;
+                justify-content: center;
+                flex-wrap: wrap;
+                text-align: center;
+                margin-top: 5rem;
+            }
         }
     }
     &__image {
         height: 40rem;
+        @media screen and (max-width: 1727px) {
+            display: flex;
+            justify-content: center;
+        }
         &--bg {
             position: relative;
             top: -17rem;
+            @media screen and (min-width: 2000px) {
+                height: 50rem;
+                top: -15rem;
+            }
+            @media screen and (max-width: 768px) {
+                position: inherit;
+                height: 40rem;
+                margin-top: 12rem;
+            }
+            @media screen and (max-width: 1727px) and (min-width: 768px) {
+                position: inherit;
+                margin-top: -10rem;
+                height: 50rem;
+            }
         }
     }
 }

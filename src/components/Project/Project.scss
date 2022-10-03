@@ -3,11 +3,33 @@
 .project {
     margin-top: 16rem;
     font-family: $noto-font;
+    @media screen and (min-width: 2000px) {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: auto;
+        margin-top: 16rem;
+        padding-bottom: 10rem;
+    }
+    @media screen and (max-width: 1728px) {
+        width: 100%;
+        margin-top: 10rem;
+    }
     &__title {
         position: relative;
         display: flex;
         margin-left: 7rem;
         margin-bottom: 5rem;
+        @media screen and (min-width: 2000px) {
+            margin-left: 4rem;
+        }
+
+        @media screen and (max-width: 1728px) {
+            width: 100%;
+            justify-content: center;
+            margin: 0;
+            margin-bottom: 5rem;
+        }
 
         &--text {
             position: relative;
@@ -19,6 +41,9 @@
             z-index: 0;
             left: 13rem;
             top: -1rem;
+            @media screen and (max-width: 1728px) {
+                left: 48%;
+            }
         }
     }
 }

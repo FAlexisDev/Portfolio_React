@@ -1,6 +1,6 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
-import ImageBg from "../../assets/images/green_aboutme_background.png";
+import ImageBg from "../../assets/images/bitmojii.png";
 import "./AboutMe.scss";
 
 const AboutMe = () => {

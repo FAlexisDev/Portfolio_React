@@ -1,6 +1,5 @@
-import React, { useEffect, useRef } from "react";
+import React, { useRef } from "react";
 import "./Badges.scss";
-import badges from "../../../data/badge";
 
 const Badges = (props) => {
     const badge = useRef(null);

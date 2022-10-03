@@ -2,16 +2,27 @@
 @import "../../../assets/styles/variables.scss";
 
 .skill {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    border: 2rem solid $primary-color;
-    border-radius: 50%;
-    width: 20rem;
-    height: 20rem;
-    margin: 5rem 8rem 5rem 8rem;
+    margin: 5rem;
+    @media screen and (max-width: 768px) {
+        margin: 0rem;
+    }
+    @media screen and (max-width: 1727px) and (min-width: 768px) {
+        margin: 2rem;
+    }
+    &__desktop {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        border: 2rem solid #e4eeff;
+        border-radius: 50%;
+        width: 21rem;
+        height: 21rem;
 
+        @media screen and (max-width: 1727px) {
+            display: none;
+        }
+    }
     &__name {
         position: absolute;
         font-size: 2rem;
@@ -23,6 +34,7 @@
     &__value {
         position: absolute;
         bottom: -5rem;
+        left: 40%;
         font-family: $noto-font;
         font-size: 2rem;
         font-weight: 600;
@@ -32,25 +44,95 @@
         position: absolute;
         width: 10rem;
         height: auto;
-
-        &--active {
-            position: absolute;
-            width: 10rem;
-            height: auto;
-            top: 2rem;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        @media screen and (max-width: 768px) {
+            width: 5rem;
+        }
+        @media screen and (max-width: 1727px) and (min-width: 768px) {
+            top: 90%;
         }
     }
 }
 
 .MuiCircularProgress-svg {
     position: absolute;
-    width: 24rem;
-    height: 24rem;
+    width: 25rem;
+    height: 25rem;
     color: $secondary-color;
-    top: -10rem;
-    left: -10rem;
+    top: -10.2rem;
+    left: -10.5rem;
+    @media screen and (max-width: 1727px) and (min-width: 768px) {
+        top: -2rem;
+        left: -17.5rem;
+    }
 }
 
 .MuiCircularProgress-indeterminate {
     animation: circular-rotate 1.4s ease-in-out infinite;
+}
+
+.skill__mobile {
+    width: 30rem;
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+    font-family: $noto-font;
+    font-size: 1.2rem;
+
+    @media screen and (max-width: 1727px) and (min-width: 768px) {
+        width: 60rem;
+        height: 10rem;
+        top: -4rem;
+        font-size: 2rem;
+    }
+
+    &--box {
+        position: relative;
+        justify-content: center;
+        height: 5rem;
+        width: 100%;
+        margin: 2rem;
+        @media screen and (min-width: 1727px) {
+            display: none;
+        }
+    }
+    &--image {
+        position: absolute;
+        width: 2rem;
+        height: auto;
+        top: -2.5rem;
+        left: 0rem;
+        @media screen and (max-width: 1727px) and (min-width: 768px) {
+            width: 5rem;
+            top: -5.5rem;
+        }
+    }
+    &--name {
+        position: absolute;
+        left: 3rem;
+        top: -2.5rem;
+        width: 20rem;
+        height: auto;
+        font-weight: 600;
+        @media screen and (max-width: 1727px) and (min-width: 768px) {
+            left: 6rem;
+            top: -4rem;
+        }
+    }
+    &--value {
+        position: absolute;
+        right: 0;
+    }
+}
+
+.MuiLinearProgress-root {
+    height: 2rem !important;
+    border-radius: 2rem;
+    background-color: #e4eeff !important;
+}
+
+.MuiLinearProgress-bar {
+    background-color: $secondary-color !important;
 }

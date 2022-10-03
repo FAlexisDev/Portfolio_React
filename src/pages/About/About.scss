@@ -2,12 +2,16 @@
 html {
     margin: 0;
     padding: 0;
+
+    background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
 }
-.bg {
-    background-color: $primary-color;
-    width: 100vw;
+.bg2 {
+    margin: auto;
     height: 100vh;
     overflow-x: hidden;
+    @media screen and (min-width: 2000px) {
+        height: 100vh;
+    }
 }
 
 .Skills {
