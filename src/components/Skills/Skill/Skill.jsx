@@ -13,7 +13,7 @@ const Skill = (props) => {
 
     const options = {
         root: document.querySelector("#scrollArea"),
-        rootMargin: "000px 0px",
+        rootMargin: "0px 0px 50px 0px",
         threshold: 1,
     };
 
