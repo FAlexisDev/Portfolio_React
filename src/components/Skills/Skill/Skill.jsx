@@ -11,19 +11,18 @@ const Skill = (props) => {
     const skillRef = useRef(null);
     const [isVisible, setIsVisible] = useState();
 
-    const options = {
-        root: document.querySelector("#scrollArea"),
-        rootMargin: "0px 0px 50px 0px",
-        threshold: 0.9,
-    };
-
     useEffect(() => {
+        const options = {
+            root: document.querySelector("#scrollArea"),
+            rootMargin: "0px 0px 50px 0px",
+            threshold: 0.9,
+        };
         const observer = new IntersectionObserver((entries) => {
             const entry = entries[0];
             setIsVisible(entry.isIntersecting);
         }, options);
         observer.observe(skillRef.current);
-    }, [options]);
+    }, []);
 
     useEffect(() => {
         if (x <= 10) {
