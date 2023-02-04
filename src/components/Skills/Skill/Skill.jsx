@@ -14,7 +14,7 @@ const Skill = (props) => {
     const options = {
         root: document.querySelector("#scrollArea"),
         rootMargin: "0px 0px 50px 0px",
-        threshold: 1,
+        threshold: 0.9,
     };
 
     useEffect(() => {
@@ -23,7 +23,7 @@ const Skill = (props) => {
             setIsVisible(entry.isIntersecting);
         }, options);
         observer.observe(skillRef.current);
-    }, []);
+    }, [options]);
 
     useEffect(() => {
         if (x <= 10) {
@@ -33,7 +33,7 @@ const Skill = (props) => {
                 setProgress(y * target * 100);
             }, 1);
         }
-    }, [x]);
+    }, [x, target]);
 
     return (
         <div className="skill" ref={skillRef}>
